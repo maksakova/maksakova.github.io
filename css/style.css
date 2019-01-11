@@ -1,0 +1,35 @@
+body {
+    background: #6c757d;
+    color: #c6c8ca;
+}
+header {
+    background: #32383e;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+main p {
+    font-size: 18px;
+}
+
+main label {
+    display: block;
+}
+
+main .form-control {
+    background: #32383e;
+    color: #fff;
+}
+#hydro {
+    margin-top: .5rem;
+}
+main table {
+    text-align: center;
+}
+main table td {
+    cursor: pointer;
+}
+main table td:hover {
+    background: #5c666f;
+}

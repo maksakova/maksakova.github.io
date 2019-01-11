@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBU</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Рассчет IBU</h1>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <label>
+                    <p>Выберите хмель</p>
+                    <select id="alpha" class="form-control">
+                        <option value="11.5">Mosaic</option>
+                        <option value="14.5">Equinox</option>
+                    </select>
+                </label>
+                <label>
+                    <p>Количество хмеля, грамм</p>
+                    <input type="text" id="weight" class="form-control" required>
+                </label>
+                <label>
+                    <p>Количество пивного сусла, литров</p>
+                    <input type="text" id="volume" class="form-control" required>
+                </label>
+                <label>
+                    <p>Показатель ареометра</p>
+                    <input type="text" id="areometer" class="form-control" required>
+                    <button id="hydro" class="btn btn-dark">Рассчитать показатель по гидрометру</button>
+                </label>
+                <p id="hydrometer"></p>
+                <br>
+                <button type="submit" id="result" class="btn btn-dark">Рассчитать IBU</button>
+                <p id="ibu"></p>
+                <button id="more" class="btn btn-dark">Нужен больше хмеля?</button>
+            </div>
+            <div class="col-md-6">
+                <p>Выберите наиболее близкое значение в таблице:</p>
+                <table class="table table-dark">
+                    <tr>
+                        <th></th>
+                        <th>1.030</th>
+                        <th>1.040</th>
+                        <th>1.050</th>
+                        <th>1.060</th>
+                        <th>1.070</th>
+                    </tr>
+                    <tr>
+                        <th>5 min</th>
+                        <td>0.055</td>
+                        <td>0.050</td>
+                        <td>0.046</td>
+                        <td>0.042</td>
+                        <td>0.038</td>
+                    </tr>
+                    <tr>
+                        <th>10 min</th>
+                        <td>0.1</td>
+                        <td>0.091</td>
+                        <td>0.084</td>
+                        <td>0.076</td>
+                        <td>0.070</td>
+                    </tr>
+                    <tr>
+                        <th>15 min</th>
+                        <td>0.137</td>
+                        <td>0.125</td>
+                        <td>0.114</td>
+                        <td>0.105</td>
+                        <td>0.096</td>
+                    </tr>
+                    <tr>
+                        <th>20 min</th>
+                        <td>0.167</td>
+                        <td>0.153</td>
+                        <td>0.14</td>
+                        <td>0.128</td>
+                        <td>0.117</td>
+                    </tr>
+                    <tr>
+                        <th>30 min</th>
+                        <td>0.212</td>
+                        <td>0.194</td>
+                        <td>0.177</td>
+                        <td>0.162</td>
+                        <td>0.148</td>
+                    </tr>
+                    <tr>
+                        <th>40 min</th>
+                        <td>0.242</td>
+                        <td>0.221</td>
+                        <td>0.202</td>
+                        <td>0.185</td>
+                        <td>0.169</td>
+                    </tr>
+                    <tr>
+                        <th>60 min</th>
+                        <td>0.276</td>
+                        <td>0.252</td>
+                        <td>0.231</td>
+                        <td>0.211</td>
+                        <td>0.193</td>
+                    </tr>
+                    <tr>
+                        <th>80 min</th>
+                        <td>0.291</td>
+                        <td>0.266</td>
+                        <td>0.243</td>
+                        <td>0.222</td>
+                        <td>0.203</td>
+                    </tr>
+                    <tr>
+                        <th>90 min</th>
+                        <td>0.295</td>
+                        <td>0.27</td>
+                        <td>0.247</td>
+                        <td>0.226</td>
+                        <td>0.206</td>
+                    </tr>
+                    <tr>
+                        <th>120 min</th>
+                        <td>0.301</td>
+                        <td>0.275</td>
+                        <td>0.252</td>
+                        <td>0.23</td>
+                        <td>0.21</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
