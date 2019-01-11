@@ -1,5 +1,6 @@
 var ibu = 0;
 $('table td').click(function(){
+    $('table td').css('background', 'none');
     $(this).css('background', '#5c666f')
     table = $(this).text();
     console.log(table);
