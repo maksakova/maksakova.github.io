@@ -1,4 +1,4 @@
 # maksakova.github.io
 
-This is script for calculation IBU.
+This is script for online IBU calculation.
 Cheers!
